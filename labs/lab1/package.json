@@ -1,0 +1,16 @@
+{
+  "name": "homework-01-bachawondimu",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/XwiKe38Q) # CS572-Homework-01-TS ## Exercise 01 Create a new TypeScript workspace, that has 3 files: * `app.ts` * `helpers.ts` * `types.ts` * remember to create a `.gitignore` file and exclude `node_modules` folder from being staged, committed, and pushed. ### `types.ts` * create a type called `Faculty` which represents an object with `firstname`, and `lastname` properties, both accept a `string`. * create a type called `Course` which represents an object with `title`, `code`, and `faculty`. The `title` and `code` accept a `string` value, and `faculty` accepts an array of `Faculty`. * create a type called `Program` which represents an object with `name` and `courses` properties. The `name` property accepts a `string` value, and the `courses` property accepts an array of `Course`.",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx watch app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "tsx": "^4.7.1"
+  }
+}
