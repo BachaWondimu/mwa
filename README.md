@@ -12,6 +12,8 @@
 [Mongoose](https://mongoosejs.com/docs/)
 [Angular](https://angular.dev/overview)
 
+[TypeScript Runtime(Dino - in expiremental state)](https://deno.com/)
+
 
 
 <picture>
