@@ -1,5 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/XwiKe38Q)
-# CS572-Homework-01-TS
+# CS572-TypeScript
 ## Exercise 01
 Create a new TypeScript workspace, that has 3 files:
 * `app.ts`

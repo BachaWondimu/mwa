@@ -1,6 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/SukhUAQI)
-## CS572-Homework-02-EventLoop
-### Write your answers directly into the `README.md` file:
+# CS572-EventLoop
 1. Explain the difference between synchronous and asynchronous operations in Node.js.
    
    synchronous operations in v8 run code line by line. That means the next statement will not be excuted before the proceeding one is done. On the other hand, asynchronous operations delagate the tasks(lines of codes) to some supporting enviroments like Web APIs in the frontend(browser) or Libuv componant in nodejs. Those supporting environment will schedule the tasks in their queues called Macrotask Queue.
@@ -73,7 +71,7 @@
    12. URL
    13. URlSearchParams
   
-#### Navigate to the `test` folder, and run `npm i`.
+# Navigate to the `test` folder, and run `npm i`.
 Write down your observation and explain what happens in Node when you run the following commands:
    * `npm run start`  
    * For Windows: 
