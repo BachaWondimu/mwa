@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import EventEmitter from 'node:events';
 
 import sytemChecker from './check.ts';
+import { error } from 'node:console';
 
 interface Name {
     id: string;
@@ -13,10 +14,10 @@ class Names extends EventEmitter {
 
     constructor() {
         super();
-        this.loadData();
         this.on('loadNotification', (message) => {
             console.log(message);
         });
+        this.loadData();
     }
 
     private loadData(): void {
@@ -95,5 +96,6 @@ console.log('Names after deletion:', names.getNames());
 console.log('----------------------------------------------------------------')
 
 console.log('Task 2')
-sytemChecker();
-// await sytemChecker();
+sytemChecker()
+    .then(console.log)
+    .catch(console.log)
