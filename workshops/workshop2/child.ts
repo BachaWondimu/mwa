@@ -2,7 +2,7 @@ import { readdir } from "node:fs/promises";
 import path from "node:path";
 
 import sharp from "sharp";
-import elasticMail from "elasticemail"
+const elasticMail = require("elasticemail");
 
 process.on("message", async (message) => {
   console.log(message);
@@ -15,28 +15,27 @@ process.on("message", async (message) => {
       .resize(200)
       .toFile(`./output/${file_name}`);
   });
-    if (diff) {
-        var client = elasticMail.createClient({
-            username: 'baacaauumaa@gmail.com',
-            apiKey: 'FDC715315D100DBE02ED6BDAF6DA1CE0319D'
-        });
- 
-        var msg = {
-            from: 'baacaauumaa@gmail.com',
-            from_name: 'Bacha Wondimu',
-            to: 'bwondimu@miu.edu',
-            subject: 'Hello',
-            body_text: diff
-        };
- 
-        client.mailer.send(msg, function (err, result) {
-            if (err) {
-                return console.error(err);
-            }
-        })
+  if (diff.length) {
+    var client = elasticMail.createClient(process.env.API_KEY);
+    const msg = {
+      from: "bachanegese21@gmail.com",
+      from_name: "Bacha Wondimu",
+      to: "bachanegese21@gmail.com",
+      subject: "Hello",
+      body_text: "Hello recieve this",
+    };
+    console.log("Message being sent: ", diff.length);
 
-        if (process.send)
-            process.send("Hello from child process, Completed the work!");
-        process.exit(0);
-    }
+    client.mailer.send(msg, (err, result) => {
+      if (err) {
+        console.error("Error sending email:", err);
+      } else {
+        console.log("Email sent successfully. Result:", result);
+      }
+    });
+
+    if (process.send)
+      process.send("Hello from child process, Completed the work!");
+    process.exit(0);
+  }
 });
