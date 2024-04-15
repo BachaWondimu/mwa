@@ -1,0 +1,22 @@
+{
+  "name": "workshop2",
+  "version": "1.0.0",
+  "description": "In this workshop, you will create an automated thumbnail generator application, to meet the following specifications: 1. Create a descriptor `package.json` file and install `tsc` and `@types/node` as development dependencies.  2. Create a `.gitignore` file, so you exclude the `node_modules` folder from being staged or tracked. 3. Create a folder `/input` and place a few high-resolution photos from [Pexels](https://www.pexels.com/). 4. Create an empty folder `/output`. 5. Declare a function: ```typescript function generate_thumbnails(): void {    console.log('Generating Thumbnails...');    // your implementation here } ``` 6. When the application starts, use the [prompts](https://www.npmjs.com/package/prompts) package and ask the user to choose a number of seconds for how often they want to run a cron-job function *(display the following options to choose from: 5, 15, 20, 30, 40, 50)* 7. Register the `generate_thumbnails()` function to run as a cron-job on an interval based on the user selection.    * Use [Node Cron](https://www.npmjs.com/package/node-cron) to schedule a cron job.    * Example: A step value of `*/30 * * * * *` runs the script every 30 seconds.",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx watch app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/node-cron": "^3.0.11",
+    "@types/prompts": "^2.4.9",
+    "tsx": "^4.7.2"
+  },
+  "dependencies": {
+    "node-cron": "^3.0.3",
+    "prompts": "^2.4.2"
+  }
+}
