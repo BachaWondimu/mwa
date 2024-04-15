@@ -1,4 +1,4 @@
-# CS572-Workshop-02-Modules
+# Workshop-02
    
 In this workshop, you will create an automated thumbnail generator application, to meet the following specifications:
 1. Create a descriptor `package.json` file and install `tsc` and `@types/node` as development dependencies. 
