@@ -1,6 +1,12 @@
 class User {
-  // private username: string;
-  constructor(private username:string) {
-   
-  }
+  private username: string = "";
 }
+
+// class User {
+//   constructor(private username:string) {
+//   }
+// }
+
+// class User {
+//   private username!: string;
+// }

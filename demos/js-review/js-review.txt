@@ -1,0 +1,22 @@
+An associative array, also known as a map, dictionary, 
+or hash table in various programming languages, is a 
+data structure that can map keys to values. 
+Unlike standard arrays or lists which use numeric 
+indices (0, 1, 2, ...), associative arrays allow the 
+use of arbitrary keys. These keys can be strings, numbers, 
+or other data types, and they are used to uniquely identify 
+values within the array.
+
+In an associative array, each key is associated with a specific 
+value. This allows for efficient lookup and retrieval of values
+based on their keys, rather than their positions. The key-value 
+pairs in an associative array are not necessarily stored in any 
+specific order, and the implementation of the associative array 
+ensures that each key is unique.
+
+Associative arrays are commonly used in programming for tasks 
+such as storing configuration settings, implementing lookup 
+tables, or representing relationships between objects. They 
+provide a flexible way to organize and access data, especially 
+when the keys used for indexing are not easily represented by 
+numeric indices.
