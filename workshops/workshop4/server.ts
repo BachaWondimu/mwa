@@ -11,6 +11,7 @@ import morgan from 'morgan'
 import connect_to_db from "./helpers/db";
 import { myErrorHandler, noRouteHandler } from './helpers/handlers';
 import usersRouter from './users/users.router';
+import coursesRouter from './courses/courses.router';
 
 //2. init
 const app = express();
@@ -24,6 +25,7 @@ app.use(morgan('dev'))
 
 //5. routes
 app.use("/users", usersRouter)
+app.use("/courses", coursesRouter)
 app.all('*',noRouteHandler)
 
 

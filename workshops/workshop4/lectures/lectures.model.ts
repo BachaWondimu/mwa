@@ -1,6 +1,6 @@
 import { InferSchemaType, Schema } from "mongoose";
 
-import { File, fileSchema } from "../files/file.model";
+import { File, fileSchema } from "../files/files.schema";
 import { questionSchema } from "../questions/question.model";
 
 export const lectureSchema = new Schema({

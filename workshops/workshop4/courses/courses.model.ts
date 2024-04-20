@@ -1,5 +1,5 @@
 import { Schema, model, InferSchemaType } from "mongoose";
-import { lectureSchema } from "../lectures/lecture.model";
+import { lectureSchema } from "../lectures/lectures.model";
 
 const courseSchema = new Schema(
   {
@@ -16,4 +16,4 @@ const courseSchema = new Schema(
 );
 
 export type Course = InferSchemaType<typeof courseSchema>;
-export const courseModel = model<Course>("course", courseSchema);
+export const CourseModel = model<Course>("course", courseSchema);
