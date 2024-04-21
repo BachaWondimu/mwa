@@ -1,0 +1,12 @@
+### Post Lecture Test ###
+
+### lecrure_id:6624d187565204ea58931290
+
+POST http://localhost:3000/courses/6624d0f8565204ea5893128e/lectures
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjI0MzRlMGVhMGRlY2Y4ZjY3OTYyNDkiLCJmdWxsbmFtZSI6IkJvYiBKb2huc29uIiwiZW1haWwiOiJiam9obnNvbkBleGFtcGxlLmNvbSIsImlhdCI6MTcxMzY4NjE0M30.qr4JRZOncWJAkIpjDHoqRt11PKQeSTFDMAmcna4QQ84
+Content-Type: application/json
+
+{
+    "title": "Lecture 1",
+    "description": "introduction to modern programming practices",
+}

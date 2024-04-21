@@ -1,12 +1,14 @@
 
 ### POST Request to Create a New Course ###
+
+### course_id:6624d0f8565204ea5893128e
 POST http://localhost:3000/courses
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjI0MzRkOWVhMGRlY2Y4ZjY3OTYyNDciLCJmdWxsbmFtZSI6IkFsaWNlIFNtaXRoIiwiZW1haWwiOiJhbGljZXNtaXRoQGV4YW1wbGUuY29tIiwiaWF0IjoxNzEzNjUzNjQyfQ.iJx_WQM6EOg7jilW68igY9v-7IGqpyRr4aguD-vbZNA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjI0MzRlMGVhMGRlY2Y4ZjY3OTYyNDkiLCJmdWxsbmFtZSI6IkJvYiBKb2huc29uIiwiZW1haWwiOiJiam9obnNvbkBleGFtcGxlLmNvbSIsImlhdCI6MTcxMzY4NjE0M30.qr4JRZOncWJAkIpjDHoqRt11PKQeSTFDMAmcna4QQ84
 Content-Type: application/json
 
 {
-  "code": "CS203",
-  "title": "OOP"
+  "code": "CS401",
+  "title": "MPP"
 }
 
 ###id: 66244996be8e754e5d1f0ab8

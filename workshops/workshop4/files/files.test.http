@@ -1,0 +1,9 @@
+### Test Files Crud ###
+### lecture_id:6624ca2b35af1fc82ea60f9c ###
+### course_id:6624c90135af1fc82ea60f9a ###
+
+POST http://localhost/courses/6624d0f8565204ea5893128e/lectures/6624ca2b35af1fc82ea60f9c/files
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjIyNGNhMmIzNWFmMWZjODJlYTYwZjljIn0sImlhdCI6MTYzNjYwNjYwMn0.7Z6J9Q
+
+
