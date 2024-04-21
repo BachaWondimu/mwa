@@ -1,0 +1,10 @@
+### POST request to test sign in ###
+POST http://localhost:3000/users/signin
+Content-Type: application/json
+
+{
+   
+"email":"alicesmith@example.com",
+"password":"password123"
+}
+

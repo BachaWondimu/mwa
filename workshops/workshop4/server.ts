@@ -12,6 +12,7 @@ import connect_to_db from "./helpers/db";
 import { myErrorHandler, noRouteHandler } from './helpers/handlers';
 import usersRouter from './users/users.router';
 import coursesRouter from './courses/courses.router';
+import { verifyToken } from './users/users.middleware';
 
 //2. init
 const app = express();
@@ -25,7 +26,7 @@ app.use(morgan('dev'))
 
 //5. routes
 app.use("/users", usersRouter)
-app.use("/courses", coursesRouter)
+app.use("/courses", verifyToken, coursesRouter);
 app.all('*',noRouteHandler)
 
 
